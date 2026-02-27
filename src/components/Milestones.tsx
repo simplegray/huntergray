@@ -1,33 +1,45 @@
 import MilestoneCard from "./MilestoneCard";
 import milestoneBird from "@/assets/milestone-bird.jpg";
-import milestoneKlutch from "@/assets/milestone-klutch.jpg";
 import milestoneStubhub from "@/assets/milestone-stubhub.jpg";
+import milestoneKlutch from "@/assets/milestone-klutch.jpg";
 import milestoneEducation from "@/assets/milestone-education.jpg";
+import logoBird from "@/assets/logo-bird.png";
+import logoStubhub from "@/assets/logo-stubhub.png";
+import logoKlutch from "@/assets/logo-klutch.png";
+import logoYale from "@/assets/logo-yale.png";
 
 const milestones = [
   {
     image: milestoneBird,
+    logo: logoBird,
     company: "Bird",
     role: "Chief Technology Officer",
-    impact: "Led product, data & engineering to 200M+ rides and Bird's first profitable quarter.",
-  },
-  {
-    image: milestoneKlutch,
-    company: "Klutch",
-    role: "Founder",
-    impact: "Built a social scheduling platform from zero to acquisition by eBay.",
+    kpi: "200M+",
+    kpiLabel: "Rides delivered, driving Bird's first profitable quarter",
   },
   {
     image: milestoneStubhub,
+    logo: logoStubhub,
     company: "StubHub",
     role: "Product & Strategy",
-    impact: "Scaled marketplace experiences for the world's largest live-event ticketing platform.",
+    kpi: "$4B+",
+    kpiLabel: "Annual GMV marketplace powering the world's largest live-event platform",
+  },
+  {
+    image: milestoneKlutch,
+    logo: logoKlutch,
+    company: "Klutch",
+    role: "Founder",
+    kpi: "Acquired",
+    kpiLabel: "Built from zero to exit — social scheduling platform acquired by eBay",
   },
   {
     image: milestoneEducation,
+    logo: logoYale,
     company: "Yale & Harvard",
     role: "Education",
-    impact: "Yale University and Harvard Business School — management, analytics & innovation.",
+    kpi: "Ivy League",
+    kpiLabel: "Yale University · Harvard Business School — Management & Analytics",
   },
 ];
 
