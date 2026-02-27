@@ -19,14 +19,15 @@ const milestones: TimelineItem[] = [
     role: "Chief Technology Officer",
     period: "2018 — Present",
     badges: ["IPO", "Unicorn"],
-    kpiLabel: "Rides delivered, first profitable quarter",
+    kpiLabel: "Led technology strategy for scaling our global operations across 300+ and developing the compnay's signature machine-learning demand model for scooter placement and pricing optimization.
+",
   },
   {
     logo: logoStubhub,
     company: "StubHub",
     role: "Director of Product",
     period: "2015 — 2017",
-    badges: ["Fortune 100", "A/B Test"],
+    badges: ["Product Leader"],
     kpiLabel: "Annual GMV, world's largest live-event platform",
   },
   {
@@ -40,9 +41,9 @@ const milestones: TimelineItem[] = [
   {
     logo: logoYale,
     company: "Yale University",
-    role: "Double Major: Psychology, Economics",
+    role: "Psychology & Economics",
     period: "2001 — 2005",
-    badges: ["Game Theory", "Consumer Behavior"],
+    badges: ["Game Theory"],
     kpiLabel:
       "At Yale, I studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
   },
