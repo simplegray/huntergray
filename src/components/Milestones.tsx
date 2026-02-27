@@ -84,7 +84,7 @@ const Milestones = () => {
                     <img
                       src={m.logo}
                       alt={`${m.company} logo`}
-                      className="h-10 w-10 md:h-12 md:w-12 object-contain rounded-lg shrink-0"
+                      className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-[22%] shrink-0 shadow-[0_2px_8px_hsl(0_0%_0%_/_0.3)]"
                     />
 
                     {/* Info */}
