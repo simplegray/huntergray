@@ -18,32 +18,32 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    kpi: "IPO & EBITDA+",
-    kpiLabel: "Led product strategy and tech execution for a global company spanning over 250 cities inclusive of IPO and first profitable EBITDA+ year",
+    kpi: "200M+",
+    kpiLabel: "Rides delivered, first profitable quarter",
   },
   {
     logo: logoStubhub,
     company: "StubHub",
-    role: "Product & Strategy",
+    role: "Director of Product",
     period: "2015 — 2018",
     kpi: "$4B+",
-    kpiLabel: "Built and scaled StubHub's experimentation and engagement infrastructure, enabling product teams to ship and optimize features at global scale",
+    kpiLabel: "Annual GMV, world's largest live-event platform",
   },
   {
     logo: logoKlutch,
     company: "Klutch",
-    role: "Founder",
+    role: "CEO & Founder",
     period: "2013 — 2015",
-    kpi: "Acquired by eBay",
-    kpiLabel: "Founded startup to solve the consumer problem of group scheduling and social event discovery — set vision, product strategy, led funding and exit",
+    kpi: "Acquired",
+    kpiLabel: "Social scheduling platform, acquired by eBay",
   },
   {
     logo: logoYale,
     company: "Yale University",
     role: "Education",
     period: "2007 — 2013",
-    kpi: "Game Theory",
-    kpiLabel: "Double majored in Psychology and Economics with a focus around Customer Behavior and Game Theory",
+    kpi: "Ivy League",
+    kpiLabel: "Yale University · Harvard Business School",
   },
 ];
 
@@ -71,9 +71,7 @@ const Milestones = () => {
                 {/* Dot */}
                 <div className="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_hsl(45_100%_60%_/_0.4)] mt-1 shrink-0" />
                 {/* Line */}
-                {!isLast && (
-                  <div className="w-px flex-1 bg-gradient-to-b from-primary/40 to-border/30" />
-                )}
+                {!isLast && <div className="w-px flex-1 bg-gradient-to-b from-primary/40 to-border/30" />}
               </div>
 
               {/* Card */}
@@ -90,12 +88,8 @@ const Milestones = () => {
                     {/* Info */}
                     <div className="flex-1 min-w-0">
                       <div className="flex items-baseline justify-between gap-3 mb-1">
-                        <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
-                          {m.company}
-                        </h3>
-                        <span className="text-muted-foreground text-xs font-body whitespace-nowrap">
-                          {m.period}
-                        </span>
+                        <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">{m.company}</h3>
+                        <span className="text-muted-foreground text-xs font-body whitespace-nowrap">{m.period}</span>
                       </div>
                       <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase mb-3">
                         {m.role}
@@ -106,9 +100,7 @@ const Milestones = () => {
                         <span className="font-heading text-2xl md:text-3xl font-bold text-foreground tracking-tight">
                           {m.kpi}
                         </span>
-                        <span className="text-muted-foreground text-sm leading-snug">
-                          {m.kpiLabel}
-                        </span>
+                        <span className="text-muted-foreground text-sm leading-snug">{m.kpiLabel}</span>
                       </div>
                     </div>
                   </div>
