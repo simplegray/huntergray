@@ -34,7 +34,7 @@ const milestones: TimelineItem[] = [
     company: "Klutch",
     role: "CEO & Founder",
     period: "2013 — 2015",
-    kpi: "Acquired",
+    kpi: "Acquired by eBay",
     kpiLabel: "Social scheduling platform, acquired by eBay",
   },
   {
@@ -42,7 +42,7 @@ const milestones: TimelineItem[] = [
     company: "Yale University",
     role: "Education",
     period: "2007 — 2013",
-    kpi: "Ivy League",
+    kpi: "Game Theory",
     kpiLabel: "Yale University · Harvard Business School",
   },
 ];
@@ -82,7 +82,9 @@ const Milestones = () => {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-start justify-between gap-3 mb-1">
                         <div>
-                          <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">{m.company}</h3>
+                          <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
+                            {m.company}
+                          </h3>
                           <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase mt-0.5">
                             {m.role}
                           </p>
