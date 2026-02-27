@@ -90,7 +90,7 @@ const Milestones = () => {
                           </p>
                           <span className="text-muted-foreground text-xs font-body">{m.period}</span>
                         </div>
-                        <span className="font-heading text-2xl md:text-3xl font-bold text-foreground tracking-tight whitespace-nowrap">
+                        <span className="text-primary font-heading text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2.5 py-0.5 whitespace-nowrap">
                           {m.kpi}
                         </span>
                       </div>
