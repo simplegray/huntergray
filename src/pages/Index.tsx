@@ -58,8 +58,7 @@ const Index = () => {
               className="opacity-0 animate-slide-up text-muted-foreground"
               style={{ animationDelay: "1.9s", animationFillMode: "forwards" }}
             >
-              When I'm not working, you'll usually find me watching football ⚽, playing with my dog 🐶, or chasing down
-              the perfect cup of coffee ☕
+              When I'm not working, you'll usually find me watching football ⚽, trying to teach my dog a new trick 🐶, or chasing down the perfect paella 🥘
             </p>
 
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "2.0s", animationFillMode: "forwards" }}>
