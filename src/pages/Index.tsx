@@ -72,7 +72,7 @@ const Index = () => {
           className="text-center text-muted-foreground/50 text-sm mt-8 opacity-0 animate-fade-in"
           style={{ animationDelay: "1.5s", animationFillMode: "forwards" }}
         >
-          Built with coffee in Los Angeles, California
+          Built with coffee ☕ in Los Angeles, California
         </p>
       </main>
     </div>
