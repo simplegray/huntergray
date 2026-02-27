@@ -19,8 +19,8 @@ const milestones: TimelineItem[] = [
     role: "Chief Technology Officer",
     period: "2018 — Present",
     badges: ["IPO", "Unicorn"],
-    kpiLabel: "Led technology strategy for scaling our global operations across 300+ and developing the compnay's signature machine-learning demand model for scooter placement and pricing optimization.
-",
+    kpiLabel:
+      "Led technology strategy for scaling our global operations across 300+ and developing the compnay's signature machine-learning demand model for scooter placement and pricing optimization.",
   },
   {
     logo: logoStubhub,
