@@ -80,21 +80,21 @@ const Milestones = () => {
 
                     {/* Info */}
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-baseline justify-between gap-3 mb-1">
-                        <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">{m.company}</h3>
-                        <span className="text-muted-foreground text-xs font-body whitespace-nowrap">{m.period}</span>
-                      </div>
-                      <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase mb-3">
-                        {m.role}
-                      </p>
-
-                      {/* KPI */}
-                      <div className="flex items-baseline gap-3">
-                        <span className="font-heading text-2xl md:text-3xl font-bold text-foreground tracking-tight">
+                      <div className="flex items-start justify-between gap-3 mb-1">
+                        <div>
+                          <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">{m.company}</h3>
+                          <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase mt-0.5">
+                            {m.role}
+                          </p>
+                          <span className="text-muted-foreground text-xs font-body">{m.period}</span>
+                        </div>
+                        <span className="font-heading text-2xl md:text-3xl font-bold text-foreground tracking-tight whitespace-nowrap">
                           {m.kpi}
                         </span>
-                        <span className="text-muted-foreground text-sm leading-snug">{m.kpiLabel}</span>
                       </div>
+
+                      {/* KPI Label */}
+                      <p className="text-muted-foreground text-sm leading-snug mt-3">{m.kpiLabel}</p>
                     </div>
                   </div>
                 </div>
