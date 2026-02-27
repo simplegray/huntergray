@@ -26,7 +26,7 @@ const milestones: TimelineItem[] = [
     company: "StubHub",
     role: "Director of Product",
     period: "2015 — 2018",
-    kpi: "$4B+",
+    kpi: "2x engagement",
     kpiLabel: "Annual GMV, world's largest live-event platform",
   },
   {
