@@ -34,7 +34,7 @@ const milestones: TimelineItem[] = [
     company: "Klutch",
     role: "CEO & Founder",
     period: "2011 — 2015",
-    kpi: "Acquired","Best New App",
+    kpi: "Acquired",
     kpiLabel: "Founded startup to solve the consumer problem of group scheduling and social event discovery."  },
   {
     logo: logoYale,
