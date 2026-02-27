@@ -36,7 +36,7 @@ const milestones: TimelineItem[] = [
     role: "CEO & Founder",
     period: "2011 — 2015",
     badges: ["Exit", "Startup"],
-    kpiLabel: "Founded startup to solve the consumer problem of group scheduling and social event discovery.",
+    kpiLabel: "Klutch was acquired by eBay in 2015. Founded startup to solve the consumer problem of group scheduling and social event discovery. Set vision, product strategy, led funding and exit. Klutch is a mobile messaging platform that simplifies group scheduling and social planning. Klutch has been considered a \"Best New App\" by Apple and is currently featured in \"Social Networking\" in the App Store.",
   },
   {
     logo: logoYale,
