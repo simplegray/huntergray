@@ -8,7 +8,7 @@ interface TimelineItem {
   company: string;
   role: string;
   period: string;
-  kpi: string;
+  badges: string[];
   kpiLabel: string;
 }
 
@@ -18,7 +18,7 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    kpi: "IPO",
+    badges: ["IPO", "Unicorn", "EBITDA+"],
     kpiLabel: "Rides delivered, first profitable quarter",
   },
   {
@@ -26,7 +26,7 @@ const milestones: TimelineItem[] = [
     company: "StubHub",
     role: "Director of Product",
     period: "2015 — 2017",
-    kpi: "A/B",
+    badges: ["Fortune 100", "A/B Test"],
     kpiLabel: "Annual GMV, world's largest live-event platform",
   },
   {
@@ -34,14 +34,15 @@ const milestones: TimelineItem[] = [
     company: "Klutch",
     role: "CEO & Founder",
     period: "2011 — 2015",
-    kpi: "Acquired",
-    kpiLabel: "Founded startup to solve the consumer problem of group scheduling and social event discovery."  },
+    badges: ["Startup", "Acquired"],
+    kpiLabel: "Founded startup to solve the consumer problem of group scheduling and social event discovery.",
+  },
   {
     logo: logoYale,
     company: "Yale University",
     role: "Education",
     period: "2001 — 2005",
-    kpi: "Foundation",
+    badges: ["Game Theory", "Consumer Behavior"],
     kpiLabel: "Yale University",
   },
 ];
@@ -89,9 +90,13 @@ const Milestones = () => {
                           </p>
                           <span className="text-muted-foreground text-xs font-body">{m.period}</span>
                         </div>
-                        <span className="text-primary font-heading text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2.5 py-0.5 whitespace-nowrap">
-                          {m.kpi}
-                        </span>
+                        <div className="flex flex-wrap gap-1.5">
+                          {m.badges.map((badge) => (
+                            <span key={badge} className="text-primary font-heading text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2.5 py-0.5 whitespace-nowrap">
+                              {badge}
+                            </span>
+                          ))}
+                        </div>
                       </div>
 
                       {/* KPI Label */}
