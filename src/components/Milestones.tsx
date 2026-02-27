@@ -18,7 +18,7 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    kpi: "200M+",
+    kpi: "IPO",
     kpiLabel: "Rides delivered, first profitable quarter",
   },
   {
