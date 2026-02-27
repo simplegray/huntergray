@@ -32,7 +32,7 @@ const Index = () => {
           {/* Bio */}
           <div className="space-y-5 text-foreground/90 font-body leading-relaxed">
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
-              <span className="text-primary font-medium">Founder and technology executive</span> at the intersection of
+              <span className="text-primary font-medium">Software developer, founder, and technology executive</span> at the intersection of
               marketplaces, consumer experience, and ML/AI.
             </p>
 
