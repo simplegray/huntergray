@@ -94,7 +94,7 @@ const Milestones = () => {
                           </p>
                           <span className="text-muted-foreground text-xs font-body">{m.period}</span>
                         </div>
-                        <div className="flex flex-wrap gap-1.5 justify-end">
+                        <div className="flex flex-col gap-1.5 items-end">
                           {m.badges.map((badge) => (
                             <span
                               key={badge}
