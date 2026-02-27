@@ -18,7 +18,7 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    kpi: "IPO, EBITDA+",
+    kpi: "IPO",
     kpiLabel: "Rides delivered, first profitable quarter",
   },
   {
@@ -26,7 +26,7 @@ const milestones: TimelineItem[] = [
     company: "StubHub",
     role: "Director of Product",
     period: "2015 — 2018",
-    kpi: "A/B Frameworks",
+    kpi: "A/B",
     kpiLabel: "Annual GMV, world's largest live-event platform",
   },
   {
@@ -34,7 +34,7 @@ const milestones: TimelineItem[] = [
     company: "Klutch",
     role: "CEO & Founder",
     period: "2013 — 2015",
-    kpi: "Acquired by eBay",
+    kpi: "Acquired",
     kpiLabel: "Social scheduling platform, acquired by eBay",
   },
   {
@@ -42,8 +42,8 @@ const milestones: TimelineItem[] = [
     company: "Yale University",
     role: "Education",
     period: "2007 — 2013",
-    kpi: "Game Theory",
-    kpiLabel: "Yale University · Harvard Business School",
+    kpi: "Foundation",
+    kpiLabel: "Yale University",
   },
 ];
 
