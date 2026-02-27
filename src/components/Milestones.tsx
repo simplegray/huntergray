@@ -20,7 +20,7 @@ const milestones: TimelineItem[] = [
     period: "2018 — Present",
     badges: ["IPO", "Unicorn"],
     kpiLabel:
-      "Led technology strategy (product, design, data, and engineering) for scaling our global operations across 300+ and developing the compnay's signature machine-learning demand model for scooter placement and pricing optimization.",
+      "Led technology strategy for scaling our global operations across 300+ and developing the company's signature machine-learning model for scooter placement and demand pricing optimization.",
   },
   {
     logo: logoStubhub,
@@ -29,7 +29,7 @@ const milestones: TimelineItem[] = [
     period: "2015 — 2017",
     badges: ["Product Leader"],
     kpiLabel:
-      "Spearheaded eBay's innovation division at StubHub. Focused on mobile, payment technology, event discovery, and social engagement aimed at increasing our engagement KPI.",
+      "Spearheaded eBay's innovation division at StubHub. Focused on mobile, payment technology, event discovery, and social engagement to increase our virality (k-factor) KPI.",
   },
   {
     logo: logoKlutch,
@@ -38,7 +38,7 @@ const milestones: TimelineItem[] = [
     period: "2011 — 2015",
     badges: ["Exit", "Startup"],
     kpiLabel:
-      'Klutch was acquired by eBay in 2015. Founded startup to solve the consumer problem of group scheduling and social event discovery. Set vision, product strategy, led funding and exit. Klutch was voted as a "Best New App" by Apple in the App Store, Klutch was acquired by eBay in 2015.',
+      'Founded startup to solve the consumer problem of group scheduling. Set vision, product strategy, led funding and exit. Klutch was voted as a "Best New App" by Apple in the App Store. Klutch was acquired by eBay in 2015.',
   },
   {
     logo: logoYale,
@@ -47,7 +47,7 @@ const milestones: TimelineItem[] = [
     period: "2001 — 2005",
     badges: ["Game Theory"],
     kpiLabel:
-      "At Yale, I studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
+     'Studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
   },
 ];
 
