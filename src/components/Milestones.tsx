@@ -28,7 +28,8 @@ const milestones: TimelineItem[] = [
     role: "Director of Product",
     period: "2015 — 2017",
     badges: ["Product Leader"],
-    kpiLabel: "Spearheaded eBay's innovation division at StubHub. Focused on mobile, payment technology, event discovery, and social engagement aimed at increasing our engagement KPI.",
+    kpiLabel:
+      "Spearheaded eBay's innovation division at StubHub. Focused on mobile, payment technology, event discovery, and social engagement aimed at increasing our engagement KPI.",
   },
   {
     logo: logoKlutch,
@@ -36,7 +37,8 @@ const milestones: TimelineItem[] = [
     role: "CEO & Founder",
     period: "2011 — 2015",
     badges: ["Exit", "Startup"],
-    kpiLabel: "Klutch was acquired by eBay in 2015. Founded startup to solve the consumer problem of group scheduling and social event discovery. Set vision, product strategy, led funding and exit. Klutch is a mobile messaging platform that simplifies group scheduling and social planning. Klutch has been considered a \"Best New App\" by Apple and is currently featured in \"Social Networking\" in the App Store.",
+    kpiLabel:
+      'Klutch was acquired by eBay in 2015. Founded startup to solve the consumer problem of group scheduling and social event discovery. Set vision, product strategy, led funding and exit. Klutch was voted as a "Best New App" by Apple in the App Store, Klutch was acquired by eBay in 2015.',
   },
   {
     logo: logoYale,
