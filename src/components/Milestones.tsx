@@ -18,8 +18,8 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    kpi: "200M+",
-    kpiLabel: "Rides delivered, first profitable quarter",
+    kpi: "250+",
+    kpiLabel: "Cities worldwide — led product strategy and tech execution inclusive of IPO and first profitable EBITDA+ year",
   },
   {
     logo: logoStubhub,
@@ -27,7 +27,7 @@ const milestones: TimelineItem[] = [
     role: "Product & Strategy",
     period: "2015 — 2018",
     kpi: "$4B+",
-    kpiLabel: "Annual GMV, world's largest live-event platform",
+    kpiLabel: "Spearheaded eBay's innovation division growing digital engagement across several categories",
   },
   {
     logo: logoKlutch,
@@ -35,15 +35,15 @@ const milestones: TimelineItem[] = [
     role: "Founder",
     period: "2013 — 2015",
     kpi: "Acquired",
-    kpiLabel: "Social scheduling platform, acquired by eBay",
+    kpiLabel: "Founded startup solving group scheduling and social event discovery — set vision, product strategy, led funding and exit",
   },
   {
     logo: logoYale,
-    company: "Yale & Harvard",
+    company: "Yale University",
     role: "Education",
     period: "2007 — 2013",
     kpi: "Ivy League",
-    kpiLabel: "Yale University · Harvard Business School",
+    kpiLabel: "Double majored in Psychology and Economics with a focus around Customer Behavior and Game Theory",
   },
 ];
 
