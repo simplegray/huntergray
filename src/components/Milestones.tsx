@@ -12,6 +12,7 @@ interface TimelineItem {
   period: string;
   badges: string[];
   kpiLabel: string;
+  accentVar: string;
 }
 
 const milestones: TimelineItem[] = [
@@ -21,6 +22,7 @@ const milestones: TimelineItem[] = [
     role: "Chief Technology Officer",
     period: "2018 — Present",
     badges: ["IPO", "Unicorn"],
+    accentVar: "--milestone-bird",
     kpiLabel:
       "Led technology strategy (product, design, data, and engineering) for scaling our global operations across 300+ and developing the compnay's signature machine-learning demand model for scooter placement and pricing optimization.",
   },
@@ -30,6 +32,7 @@ const milestones: TimelineItem[] = [
     role: "Director of Product",
     period: "2015 — 2017",
     badges: ["Product Leader"],
+    accentVar: "--milestone-stubhub",
     kpiLabel: "Spearheaded eBay's innovation division at StubHub. Focused on mobile, payment technology, event discovery, and social engagement aimed at increasing our engagement KPI.",
   },
   {
@@ -38,6 +41,7 @@ const milestones: TimelineItem[] = [
     role: "CEO & Founder",
     period: "2011 — 2015",
     badges: ["Exit", "Startup"],
+    accentVar: "--milestone-klutch",
     kpiLabel: "Klutch was acquired by eBay in 2015. Founded startup to solve the consumer problem of group scheduling and social event discovery. Set vision, product strategy, led funding and exit. Klutch is a mobile messaging platform that simplifies group scheduling and social planning. Klutch has been considered a \"Best New App\" by Apple and is currently featured in \"Social Networking\" in the App Store.",
   },
   {
@@ -46,8 +50,8 @@ const milestones: TimelineItem[] = [
     role: "Psychology & Economics",
     period: "2001 — 2005",
     badges: ["Game Theory"],
-    kpiLabel:
-      "At Yale, I studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
+    accentVar: "--milestone-yale",
+    kpiLabel: "At Yale, I studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
   },
 ];
 
@@ -63,6 +67,7 @@ const Milestones = () => {
         {milestones.map((m, i) => {
           const isLast = i === milestones.length - 1;
           const isOpen = expanded[m.company] ?? false;
+          const accent = `var(${m.accentVar})`;
           return (
             <div
               key={m.company}
@@ -71,14 +76,28 @@ const Milestones = () => {
             >
               {/* Timeline spine */}
               <div className="flex flex-col items-center shrink-0 w-10">
-                <div className="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_hsl(45_100%_60%_/_0.4)] mt-1 shrink-0" />
+                <div
+                  className="w-3 h-3 rounded-full mt-1 shrink-0"
+                  style={{ backgroundColor: `hsl(${accent})`, boxShadow: `0 0 12px hsl(${accent} / 0.4)` }}
+                />
                 {!isLast && <div className="w-px flex-1 bg-gradient-to-b from-primary/40 to-border/30" />}
               </div>
 
               {/* Card */}
               <div className={`group flex-1 pb-8 ${isLast ? "pb-0" : ""}`}>
                 <div
-                  className="glass-card p-5 md:p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_hsl(45_100%_60%_/_0.08)] cursor-pointer"
+                  className="glass-card p-5 md:p-6 transition-all duration-300 cursor-pointer"
+                  style={{
+                    ["--card-accent" as string]: accent,
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = `hsl(${accent} / 0.3)`;
+                    e.currentTarget.style.boxShadow = `0 0 30px hsl(${accent} / 0.08)`;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = "";
+                    e.currentTarget.style.boxShadow = "";
+                  }}
                   onClick={() => toggle(m.company)}
                 >
                   <div className="flex items-start gap-4">
@@ -95,7 +114,10 @@ const Milestones = () => {
                             <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
                               {m.company}
                             </h3>
-                            <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase mt-0.5">
+                            <p
+                              className="font-heading text-xs font-medium tracking-wider uppercase mt-0.5"
+                              style={{ color: `hsl(${accent})` }}
+                            >
                               {m.role}
                             </p>
                             <span className="text-muted-foreground text-xs font-body">{m.period}</span>
@@ -108,7 +130,13 @@ const Milestones = () => {
                           {m.badges.map((badge) => (
                             <span
                               key={badge}
-                              className="text-primary font-heading text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2.5 py-0.5 whitespace-nowrap"
+                              className="font-heading text-xs font-medium tracking-wider uppercase rounded-full px-2.5 py-0.5 whitespace-nowrap"
+                              style={{
+                                color: `hsl(${accent})`,
+                                borderWidth: "1px",
+                                borderColor: `hsl(${accent} / 0.3)`,
+                                backgroundColor: `hsl(${accent} / 0.1)`,
+                              }}
                             >
                               {badge}
                             </span>
