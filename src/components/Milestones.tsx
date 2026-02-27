@@ -20,7 +20,7 @@ const milestones: TimelineItem[] = [
     period: "2018 — Present",
     badges: ["IPO", "Unicorn"],
     kpiLabel:
-      "Led technology strategy for scaling our global operations across 300+ and developing the compnay's signature machine-learning demand model for scooter placement and pricing optimization.",
+      "Led technology strategy (product, design, data, and engineering) for scaling our global operations across 300+ and developing the compnay's signature machine-learning demand model for scooter placement and pricing optimization.",
   },
   {
     logo: logoStubhub,
@@ -28,7 +28,15 @@ const milestones: TimelineItem[] = [
     role: "Director of Product",
     period: "2015 — 2017",
     badges: ["Product Leader"],
-    kpiLabel: "Annual GMV, world's largest live-event platform",
+    kpiLabel: "Spearheaded eBay's innovation division at Stubhub.
+      
+      
+Director, Product
+Director, Product
+StubHub · Full-timeStubHub · Full-time
+May 2015 - Jun 2017 · 2 yrs 2 mosMay 2015 to Jun 2017 · 2 yrs 2 mos
+San Francisco Bay AreaSan Francisco Bay Area
+Spearheaded eBay's innovation division at Stubhub. Focused on mobile, payment technology, event discovery, and social engagement aimed at increasing our engagement KPI.",
   },
   {
     logo: logoKlutch,
