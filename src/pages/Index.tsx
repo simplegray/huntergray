@@ -2,6 +2,7 @@ import FloatingOrbs from "@/components/FloatingOrbs";
 import ProfileAvatar from "@/components/ProfileAvatar";
 import TypewriterText from "@/components/TypewriterText";
 import SocialLinks from "@/components/SocialLinks";
+import Milestones from "@/components/Milestones";
 
 const Index = () => {
   return (
@@ -65,6 +66,9 @@ const Index = () => {
           <div className="mt-10 pt-8 border-t border-border/50">
             <SocialLinks />
           </div>
+
+          {/* Milestones */}
+          <Milestones />
         </div>
 
         {/* Subtle footer */}
