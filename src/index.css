@@ -43,12 +43,6 @@
     --gradient-orb-2: radial-gradient(circle, hsl(200 80% 60% / 0.1) 0%, transparent 70%);
     --shadow-glow: 0 0 60px hsl(45 100% 60% / 0.15);
     --shadow-soft: 0 4px 24px hsl(0 0% 0% / 0.4);
-
-    /* Milestone accent colors */
-    --milestone-bird: 195 78% 65%;
-    --milestone-stubhub: 262 56% 48%;
-    --milestone-klutch: 19 74% 61%;
-    --milestone-yale: 216 72% 23%;
     
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
