@@ -47,7 +47,7 @@ const milestones: TimelineItem[] = [
     period: "2001 — 2005",
     badges: ["Game Theory"],
     kpiLabel:
-     'Studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
+     'Studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.',
   },
 ];
 
