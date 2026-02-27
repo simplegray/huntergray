@@ -18,7 +18,7 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    badges: ["IPO", "Unicorn", "EBITDA+"],
+    badges: ["IPO", "Unicorn"],
     kpiLabel: "Rides delivered, first profitable quarter",
   },
   {
@@ -34,16 +34,17 @@ const milestones: TimelineItem[] = [
     company: "Klutch",
     role: "CEO & Founder",
     period: "2011 — 2015",
-    badges: ["Startup", "Acquired"],
+    badges: ["Exit", "Startup"],
     kpiLabel: "Founded startup to solve the consumer problem of group scheduling and social event discovery.",
   },
   {
     logo: logoYale,
     company: "Yale University",
-    role: "Education",
+    role: "Double Major: Psychology, Economics",
     period: "2001 — 2005",
     badges: ["Game Theory", "Consumer Behavior"],
-    kpiLabel: "Yale University",
+    kpiLabel:
+      "At Yale, I studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
   },
 ];
 
@@ -92,7 +93,10 @@ const Milestones = () => {
                         </div>
                         <div className="flex flex-wrap gap-1.5 justify-end">
                           {m.badges.map((badge) => (
-                            <span key={badge} className="text-primary font-heading text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2.5 py-0.5 whitespace-nowrap">
+                            <span
+                              key={badge}
+                              className="text-primary font-heading text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2.5 py-0.5 whitespace-nowrap"
+                            >
                               {badge}
                             </span>
                           ))}
