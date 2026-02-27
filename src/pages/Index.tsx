@@ -13,21 +13,18 @@ const Index = () => {
       {/* Content */}
       <main className="relative z-10 w-full max-w-2xl mx-auto px-6 py-12">
         <div className="glass-card p-8 md:p-12">
-          {/* Avatar */}
+          {/* Hero: Avatar + Name inline */}
           <div
-            className="mb-8 opacity-0 animate-fade-in"
+            className="flex items-center gap-5 md:gap-6 mb-8 opacity-0 animate-fade-in"
             style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
           >
             <ProfileAvatar />
+            <div>
+              <h1 className="text-2xl md:text-3xl">
+                <TypewriterText text="I'm Hunter 👨‍💻" delay={600} />
+              </h1>
+            </div>
           </div>
-
-          {/* Greeting */}
-          <h1
-            className="text-2xl md:text-3xl mb-8 opacity-0 animate-fade-in"
-            style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
-          >
-            <TypewriterText text="I'm Hunter 👨‍💻" delay={600} />
-          </h1>
 
           {/* Bio */}
           <div className="space-y-5 text-foreground/90 font-body leading-relaxed">
