@@ -8,8 +8,8 @@ interface TimelineItem {
   company: string;
   role: string;
   period: string;
-  pill: string;
-  headline: string;
+  kpi: string;
+  kpiLabel: string;
 }
 
 const milestones: TimelineItem[] = [
@@ -18,32 +18,32 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    pill: "IPO → EBITDA+",
-    headline: "Scaled global micromobility platform across 250+ cities",
+    kpi: "IPO & EBITDA+",
+    kpiLabel: "Led product strategy and tech execution for a global company spanning over 250 cities inclusive of IPO and first profitable EBITDA+ year",
   },
   {
     logo: logoStubhub,
     company: "StubHub",
     role: "Product & Strategy",
     period: "2015 — 2018",
-    pill: "$4B+ GMV",
-    headline: "Built and scaled experimentation and engagement infrastructure",
+    kpi: "$4B+",
+    kpiLabel: "Built and scaled StubHub's experimentation and engagement infrastructure, enabling product teams to ship and optimize features at global scale",
   },
   {
     logo: logoKlutch,
     company: "Klutch",
     role: "Founder",
     period: "2013 — 2015",
-    pill: "Acquired by eBay",
-    headline: "Founded, raised $2M, led product, and exit",
+    kpi: "Acquired by eBay",
+    kpiLabel: "Founded startup to solve the consumer problem of group scheduling and social event discovery — set vision, product strategy, led funding and exit",
   },
   {
     logo: logoYale,
     company: "Yale University",
     role: "Education",
     period: "2007 — 2013",
-    pill: "Yale",
-    headline: "Psychology & Economics focused on behavior and game theory",
+    kpi: "Game Theory",
+    kpiLabel: "Double majored in Psychology and Economics with a focus around Customer Behavior and Game Theory",
   },
 ];
 
@@ -57,53 +57,66 @@ const Milestones = () => {
         Highlights
       </h2>
 
-      <div className="space-y-3">
-        {milestones.map((m, i) => (
-          <div
-            key={m.company}
-            className="opacity-0 animate-slide-up"
-            style={{ animationDelay: `${1.3 + i * 0.12}s`, animationFillMode: "forwards" }}
-          >
-            <div className="group rounded-xl border border-border/40 bg-card/30 backdrop-blur-sm p-5 md:p-6 transition-all duration-300 hover:border-border/60 hover:bg-card/50">
-              <div className="flex items-start gap-4">
-                {/* Logo */}
-                <img
-                  src={m.logo}
-                  alt={`${m.company} logo`}
-                  className="h-10 w-10 md:h-11 md:w-11 object-cover rounded-[20%] shrink-0 shadow-sm"
-                />
+      <div className="relative">
+        {milestones.map((m, i) => {
+          const isLast = i === milestones.length - 1;
+          return (
+            <div
+              key={m.company}
+              className="relative flex gap-5 opacity-0 animate-slide-up"
+              style={{ animationDelay: `${1.3 + i * 0.15}s`, animationFillMode: "forwards" }}
+            >
+              {/* Timeline spine */}
+              <div className="flex flex-col items-center shrink-0 w-10">
+                {/* Dot */}
+                <div className="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_hsl(45_100%_60%_/_0.4)] mt-1 shrink-0" />
+                {/* Line */}
+                {!isLast && (
+                  <div className="w-px flex-1 bg-gradient-to-b from-primary/40 to-border/30" />
+                )}
+              </div>
 
-                {/* Content */}
-                <div className="flex-1 min-w-0">
-                  {/* Top row: Company + Period */}
-                  <div className="flex items-baseline justify-between gap-3 mb-0.5">
-                    <h3 className="font-heading text-[15px] md:text-base font-semibold text-foreground">
-                      {m.company}
-                    </h3>
-                    <span className="text-muted-foreground/60 text-xs font-body whitespace-nowrap">
-                      {m.period}
-                    </span>
-                  </div>
+              {/* Card */}
+              <div className={`group flex-1 pb-8 ${isLast ? "pb-0" : ""}`}>
+                <div className="glass-card p-5 md:p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_hsl(45_100%_60%_/_0.08)]">
+                  <div className="flex items-start gap-4">
+                    {/* Logo */}
+                    <img
+                      src={m.logo}
+                      alt={`${m.company} logo`}
+                      className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-[22%] shrink-0 shadow-[0_2px_8px_hsl(0_0%_0%_/_0.3)]"
+                    />
 
-                  {/* Role */}
-                  <p className="text-muted-foreground text-xs tracking-wide mb-3">
-                    {m.role}
-                  </p>
+                    {/* Info */}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-baseline justify-between gap-3 mb-1">
+                        <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
+                          {m.company}
+                        </h3>
+                        <span className="text-muted-foreground text-xs font-body whitespace-nowrap">
+                          {m.period}
+                        </span>
+                      </div>
+                      <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase mb-3">
+                        {m.role}
+                      </p>
 
-                  {/* Pill + Headline */}
-                  <div className="flex items-start gap-2.5">
-                    <span className="shrink-0 mt-[3px] inline-flex items-center rounded-full bg-primary/10 border border-primary/20 px-2.5 py-0.5 text-[11px] font-medium text-primary tracking-wide">
-                      {m.pill}
-                    </span>
-                    <p className="text-foreground/80 text-sm leading-relaxed">
-                      {m.headline}
-                    </p>
+                      {/* KPI */}
+                      <div className="flex items-baseline gap-3">
+                        <span className="font-heading text-2xl md:text-3xl font-bold text-foreground tracking-tight">
+                          {m.kpi}
+                        </span>
+                        <span className="text-muted-foreground text-sm leading-snug">
+                          {m.kpiLabel}
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
