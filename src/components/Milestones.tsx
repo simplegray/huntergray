@@ -18,7 +18,7 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    badges: ["IPO", "Unicorn"],
+    badges: ["IPO", "EBITDA+"],
     kpiLabel:
       "Led technology strategy for scaling our global operations across 300+ and developing the company's signature machine-learning model for scooter placement and demand pricing optimization.",
   },
@@ -27,7 +27,7 @@ const milestones: TimelineItem[] = [
     company: "StubHub",
     role: "Director of Product",
     period: "2015 — 2017",
-    badges: ["Product Leader"],
+    badges: ["New Ventures"],
     kpiLabel:
       "Spearheaded eBay's innovation division at StubHub. Focused on mobile, payment technology, event discovery, and social engagement to increase our virality (k-factor) KPI.",
   },
@@ -47,7 +47,7 @@ const milestones: TimelineItem[] = [
     period: "2001 — 2005",
     badges: ["Game Theory"],
     kpiLabel:
-     'Studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.',
+      "Studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
   },
 ];
 
