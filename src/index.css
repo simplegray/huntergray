@@ -45,10 +45,10 @@
     --shadow-soft: 0 4px 24px hsl(0 0% 0% / 0.4);
 
     /* Milestone accent colors */
-    --milestone-bird: 174 70% 50%;
-    --milestone-stubhub: 220 70% 60%;
-    --milestone-klutch: 340 65% 60%;
-    --milestone-yale: 0 0% 65%;
+    --milestone-bird: 195 78% 65%;
+    --milestone-stubhub: 262 56% 48%;
+    --milestone-klutch: 19 74% 61%;
+    --milestone-yale: 216 72% 23%;
     
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
