@@ -3,12 +3,12 @@ import SocialLink from "./SocialLink";
 
 const SocialLinks = () => {
   const links = [
-    { href: "mailto:hunter@huntergray.com", icon: <Send className="w-5 h-5" />, label: "Email", tooltip: "Say Hi" },
-    { href: "https://twitter.com/huntergray", icon: <Twitter className="w-5 h-5" />, label: "Twitter", tooltip: "Thoughts" },
-    { href: "https://github.com/simplegray", icon: <Github className="w-5 h-5" />, label: "GitHub", tooltip: "Code" },
-    { href: "https://instagram.com/simplegray", icon: <Instagram className="w-5 h-5" />, label: "Instagram", tooltip: "Life" },
-    { href: "https://dribbble.com/huntergray", icon: <Dribbble className="w-5 h-5" />, label: "Dribbble", tooltip: "Design" },
-    { href: "https://linkedin.com/in/huntergray", icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", tooltip: "Career" },
+    { href: "mailto:hunter@huntergray.com", icon: <Send className="w-5 h-5" />, label: "Email", tooltip: "say hello" },
+    { href: "https://twitter.com/huntergray", icon: <Twitter className="w-5 h-5" />, label: "Twitter", tooltip: "thoughts" },
+    { href: "https://instagram.com/simplegray", icon: <Instagram className="w-5 h-5" />, label: "Instagram", tooltip: "life" },
+    { href: "https://github.com/simplegray", icon: <Github className="w-5 h-5" />, label: "GitHub", tooltip: "code" },
+    { href: "https://dribbble.com/huntergray", icon: <Dribbble className="w-5 h-5" />, label: "Dribbble", tooltip: "design" },
+    { href: "https://linkedin.com/in/huntergray", icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", tooltip: "cv" },
     { 
       href: "https://azuki.com/c/hunter", 
       icon: (
@@ -17,7 +17,7 @@ const SocialLinks = () => {
         </svg>
       ), 
       label: "Azuki",
-      tooltip: "Collection"
+      tooltip: "collection"
     },
   ];
 
