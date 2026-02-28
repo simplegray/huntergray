@@ -31,7 +31,7 @@ const milestones: TimelineItem[] = [
     period: "2015 — 2017",
     badges: ["Growth & Innovation"],
     kpiLabel: "Led innovation division developing robust A/B experimentation and engagement frameworks.",
-    brandColor: "#582CB2",
+    brandColor: "#9C82D3",
   },
   {
     logo: logoKlutch,
