@@ -88,18 +88,20 @@ const Milestones = () => {
                     {/* Info */}
                     <div className="flex-1 min-w-0 overflow-hidden">
                       <div className="flex flex-col gap-1 mb-1">
-                        <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
-                          {m.company}
-                        </h3>
-                        <div className="flex flex-wrap gap-1.5">
-                          {m.badges.map((badge) => (
-                            <span
-                              key={badge}
-                              className="text-primary font-heading text-[10px] md:text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2 md:px-2.5 py-0.5"
-                            >
-                              {badge}
-                            </span>
-                          ))}
+                        <div className="flex items-start justify-between gap-2">
+                          <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
+                            {m.company}
+                          </h3>
+                          <div className="flex flex-wrap gap-1.5 justify-end shrink-0">
+                            {m.badges.map((badge) => (
+                              <span
+                                key={badge}
+                                className="text-primary font-heading text-[10px] md:text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2 md:px-2.5 py-0.5"
+                              >
+                                {badge}
+                              </span>
+                            ))}
+                          </div>
                         </div>
                         <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase">
                           {m.role}
