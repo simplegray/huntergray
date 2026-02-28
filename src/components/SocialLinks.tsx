@@ -3,7 +3,7 @@ import SocialLink from "./SocialLink";
 
 const SocialLinks = () => {
   const links = [
-    { href: "mailto:hunter@huntergray.com", icon: <Send className="w-5 h-5" />, label: "Email", tooltip: "say hello" },
+    { href: "mailto:hello@huntergray.com", icon: <Send className="w-5 h-5" />, label: "Email", tooltip: "say hello" },
     { href: "https://twitter.com/huntergray", icon: <Twitter className="w-5 h-5" />, label: "Twitter", tooltip: "thoughts" },
     { href: "https://linkedin.com/in/huntergray", icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", tooltip: "cv" },
     { href: "https://instagram.com/simplegray", icon: <Instagram className="w-5 h-5" />, label: "Instagram", tooltip: "life" },
