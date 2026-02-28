@@ -27,7 +27,7 @@ const milestones: TimelineItem[] = [
     company: "StubHub",
     role: "Director of Product",
     period: "2015 — 2017",
-    badges: ["K-Factor"],
+    badges: ["Growth & Innovation"],
     kpiLabel: "Led innovation division developing robust A/B experimentation and engagement frameworks.",
   },
   {
