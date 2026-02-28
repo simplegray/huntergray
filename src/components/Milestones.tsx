@@ -18,36 +18,32 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    badges: ["IPO", "EBITDA+"],
-    kpiLabel:
-      "Led technology strategy for scaling our global operations across 300+ and developing the company's signature machine-learning model for scooter placement and demand pricing optimization.",
+    badges: ["IPO → EBITDA+"],
+    kpiLabel: "Led technology through IPO and first profitable year at global scale.",
   },
   {
     logo: logoStubhub,
     company: "StubHub",
     role: "Director of Product",
     period: "2015 — 2017",
-    badges: ["New Ventures"],
-    kpiLabel:
-      "Spearheaded eBay's innovation division at StubHub. Focused on mobile, payment technology, event discovery, and social engagement to increase our virality (k-factor) KPI.",
+    badges: ["Experimentation Framework"],
+    kpiLabel: "Built experimentation and engagement systems supporting global marketplace growth.",
   },
   {
     logo: logoKlutch,
     company: "Klutch",
     role: "CEO & Founder",
     period: "2011 — 2015",
-    badges: ["Exit", "Startup"],
-    kpiLabel:
-      'Founded startup to solve the consumer problem of group scheduling. Set vision, product strategy, led funding and exit. Klutch was voted as a "Best New App" by Apple in the App Store. Klutch was acquired by eBay in 2015.',
+    badges: ["Founded → Acquired by eBay"],
+    kpiLabel: "Raised capital, built product, and led company through acquisition.",
   },
   {
     logo: logoYale,
     company: "Yale University",
     role: "Psychology & Economics",
     period: "2001 — 2005",
-    badges: ["Game Theory"],
-    kpiLabel:
-      "Studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
+    badges: ["Foundation in Behavioral Systems"],
+    kpiLabel: "Focused on incentives, decision theory, and consumer behavior.",
   },
 ];
 
@@ -74,35 +70,42 @@ const Milestones = () => {
               {/* Card */}
               <div className={`group flex-1 pb-8 ${isLast ? "pb-0" : ""}`}>
                 <div className="glass-card p-5 md:p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_hsl(45_100%_60%_/_0.08)]">
-                  {/* Row 1: Outcome headline — visually dominant */}
-                  <div className="flex flex-wrap items-center gap-1.5 mb-2">
-                    {m.badges.map((badge) => (
-                      <span
-                        key={badge}
-                        className="font-heading text-sm md:text-base font-bold tracking-wider uppercase border border-primary/30 bg-primary/10 text-primary rounded-full px-3 py-1 whitespace-nowrap"
-                      >
-                        {badge}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Row 2: Company · Role — inline, medium weight */}
-                  <div className="flex items-center gap-2.5 mb-1">
+                  <div className="flex items-start gap-4">
+                    {/* Logo */}
                     <img
                       src={m.logo}
                       alt={`${m.company} logo`}
-                      className="h-5 w-5 object-cover rounded-[22%] shrink-0"
+                      className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-[22%] shrink-0 shadow-[0_2px_8px_hsl(0_0%_0%_/_0.3)]"
                     />
-                    <p className="font-heading text-sm md:text-base font-medium text-foreground/80">
-                      {m.company} <span className="text-muted-foreground/50">·</span> {m.role}
-                    </p>
+
+                    {/* Info */}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-3 mb-1">
+                        <div>
+                          <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
+                            {m.company}
+                          </h3>
+                          <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase mt-0.5">
+                            {m.role}
+                          </p>
+                          <span className="text-muted-foreground text-xs font-body">{m.period}</span>
+                        </div>
+                        <div className="flex flex-wrap gap-1.5 justify-end">
+                          {m.badges.map((badge) => (
+                            <span
+                              key={badge}
+                              className="text-primary font-heading text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2.5 py-0.5 whitespace-nowrap"
+                            >
+                              {badge}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* KPI Label */}
+                      <p className="text-muted-foreground text-sm leading-snug mt-3">{m.kpiLabel}</p>
+                    </div>
                   </div>
-
-                  {/* Row 3: Period — small, muted */}
-                  <p className="text-muted-foreground/60 text-xs font-body mb-3">{m.period}</p>
-
-                  {/* Row 4: One concise outcome sentence */}
-                  <p className="text-muted-foreground text-sm leading-snug">{m.kpiLabel}</p>
                 </div>
               </div>
             </div>
