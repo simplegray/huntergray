@@ -18,7 +18,7 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    badges: ["IPO → EBITDA+"],
+    badges: ["Unicorn → IPO → EBITDA+"],
     kpiLabel:
       "Led technology through IPO and first profitable year at global scale. Spearheaded development of the company's flagship machine-learning model for scooter placement and demand pricing optimization.",
   },
@@ -78,9 +78,7 @@ const Milestones = () => {
                         <span className="font-heading text-lg md:text-xl font-bold tracking-wide uppercase text-primary">
                           {badge}
                         </span>
-                        {idx < m.badges.length - 1 && (
-                          <span className="text-primary/40 mx-1">·</span>
-                        )}
+                        {idx < m.badges.length - 1 && <span className="text-primary/40 mx-1">·</span>}
                       </span>
                     ))}
                   </div>
