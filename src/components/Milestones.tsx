@@ -96,7 +96,7 @@ const Milestones = () => {
                             {m.badges.map((badge) => (
                               <span
                                 key={badge}
-                                className="text-primary font-heading text-[10px] md:text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2 md:px-2.5 py-0.5"
+                                className="text-primary font-heading text-[8px] md:text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-1.5 md:px-2.5 py-0.5"
                               >
                                 {badge}
                               </span>
