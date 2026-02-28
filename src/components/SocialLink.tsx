@@ -29,7 +29,7 @@ const SocialLink = ({ href, icon, label, tooltip }: SocialLinkProps) => {
           </a>
         </TooltipTrigger>
         {tooltip && (
-          <TooltipContent side="bottom" className="text-xs">
+          <TooltipContent side="top" className="text-xs">
             {tooltip}
           </TooltipContent>
         )}
