@@ -5,10 +5,7 @@ import logoStubhub from "@/assets/logo-stubhub.png";
 import logoKlutch from "@/assets/logo-klutch.png";
 import logoYale from "@/assets/logo-yale.png";
 import { useIsMobile } from "@/hooks/use-mobile";
-import {
-  Dialog,
-  DialogContent,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface TimelineItem {
   logo: string;
@@ -70,7 +67,7 @@ const Milestones = () => {
         className="font-heading text-lg md:text-xl font-semibold text-foreground mb-6 opacity-0 animate-slide-up"
         style={{ animationDelay: "1.1s", animationFillMode: "forwards" }}
       >
-        Milestones
+        Key Milestones
       </h2>
       <div className="relative">
         {milestones.map((m, i) => {
@@ -102,7 +99,7 @@ const Milestones = () => {
                   }}
                   onClick={() => setSelected(m)}
                 >
-                   <div className="flex items-start gap-3 md:gap-4">
+                  <div className="flex items-start gap-3 md:gap-4">
                     <img
                       src={m.logo}
                       alt={`${m.company} logo`}
@@ -121,8 +118,8 @@ const Milestones = () => {
                                 color: m.brandColor,
                                 borderColor: `${m.brandColor}4D`,
                                 backgroundColor: `${m.brandColor}1A`,
-                                borderWidth: '1px',
-                                borderStyle: 'solid',
+                                borderWidth: "1px",
+                                borderStyle: "solid",
                               }}
                             >
                               {m.role}
@@ -149,8 +146,8 @@ const Milestones = () => {
         <DialogContent
           className="max-w-[92vw] rounded-2xl p-0 overflow-hidden [&>button]:hidden bg-card/50 backdrop-blur-xl !border-none"
           style={{
-            border: 'none',
-            outline: 'none',
+            border: "none",
+            outline: "none",
             boxShadow: selected
               ? `0 0 20px ${selected.brandColor}50, 0 0 60px ${selected.brandColor}30, 0 0 120px ${selected.brandColor}15`
               : undefined,
@@ -166,9 +163,7 @@ const Milestones = () => {
                   className="h-14 w-14 object-cover rounded-[22%] shadow-[0_2px_8px_hsl(0_0%_0%_/_0.3)]"
                 />
                 <div className="flex-1">
-                  <h3 className="font-heading text-xl font-semibold text-foreground">
-                    {selected.company}
-                  </h3>
+                  <h3 className="font-heading text-xl font-semibold text-foreground">{selected.company}</h3>
                   <span className="text-muted-foreground text-sm font-body">{selected.period}</span>
                 </div>
                 <a
@@ -189,8 +184,8 @@ const Milestones = () => {
                   color: selected.brandColor,
                   borderColor: `${selected.brandColor}4D`,
                   backgroundColor: `${selected.brandColor}1A`,
-                  borderWidth: '1px',
-                  borderStyle: 'solid',
+                  borderWidth: "1px",
+                  borderStyle: "solid",
                 }}
               >
                 {selected.role}
@@ -202,9 +197,7 @@ const Milestones = () => {
               </p>
 
               {/* Description */}
-              <p className="text-muted-foreground text-base leading-relaxed">
-                {selected.kpiLabel}
-              </p>
+              <p className="text-muted-foreground text-base leading-relaxed">{selected.kpiLabel}</p>
             </div>
           )}
         </DialogContent>
