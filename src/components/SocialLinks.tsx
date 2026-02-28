@@ -1,13 +1,14 @@
-import { Twitter, Github, Instagram, Dribbble, Linkedin } from "lucide-react";
+import { Twitter, Github, Instagram, Dribbble, Linkedin, Send } from "lucide-react";
 import SocialLink from "./SocialLink";
 
 const SocialLinks = () => {
   const links = [
-    { href: "https://twitter.com/huntergray", icon: <Twitter className="w-5 h-5" />, label: "Twitter" },
-    { href: "https://github.com/simplegray", icon: <Github className="w-5 h-5" />, label: "GitHub" },
-    { href: "https://instagram.com/simplegray", icon: <Instagram className="w-5 h-5" />, label: "Instagram" },
-    { href: "https://dribbble.com/huntergray", icon: <Dribbble className="w-5 h-5" />, label: "Dribbble" },
-    { href: "https://linkedin.com/in/huntergray", icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn" },
+    { href: "mailto:hunter@huntergray.com", icon: <Send className="w-5 h-5" />, label: "Email", tooltip: "Say Hi" },
+    { href: "https://twitter.com/huntergray", icon: <Twitter className="w-5 h-5" />, label: "Twitter", tooltip: "Thoughts" },
+    { href: "https://github.com/simplegray", icon: <Github className="w-5 h-5" />, label: "GitHub", tooltip: "Code" },
+    { href: "https://instagram.com/simplegray", icon: <Instagram className="w-5 h-5" />, label: "Instagram", tooltip: "Life" },
+    { href: "https://dribbble.com/huntergray", icon: <Dribbble className="w-5 h-5" />, label: "Dribbble", tooltip: "Design" },
+    { href: "https://linkedin.com/in/huntergray", icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", tooltip: "Career" },
     { 
       href: "https://azuki.com/c/hunter", 
       icon: (
@@ -15,7 +16,8 @@ const SocialLinks = () => {
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
         </svg>
       ), 
-      label: "Azuki" 
+      label: "Azuki",
+      tooltip: "Collection"
     },
   ];
 
