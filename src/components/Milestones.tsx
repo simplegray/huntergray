@@ -123,7 +123,7 @@ const Milestones = () => {
                             </span>
                           </div>
                         </div>
-                        <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase">
+                        <p className="text-primary font-heading text-sm md:text-base font-medium tracking-wider uppercase">
                           {m.milestone}
                         </p>
                         <span className="text-muted-foreground text-xs font-body">{m.period}</span>
