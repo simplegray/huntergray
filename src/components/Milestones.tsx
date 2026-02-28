@@ -25,7 +25,7 @@ const milestones: TimelineItem[] = [
     period: "2018 — Present",
     milestone: "IPO → Profitability",
     kpiLabel:
-      "Led technology through IPO and first profitable year at global scale. Spearheaded the company's flagship machine-learning model.",
+      "Led technology through IPO and first profitable year at global scale. Spearheaded the company's flagship machine-learning model. Currently leading product, data, and engineering.",
     brandColor: "#62C9EA",
   },
   {
@@ -34,7 +34,8 @@ const milestones: TimelineItem[] = [
     role: "Director of Product",
     period: "2015 — 2017",
     milestone: "Growth & Innovation",
-    kpiLabel: "Led innovation division developing robust A/B experimentation and engagement frameworks.",
+    kpiLabel:
+      "Led innovation division developing robust rapid iteration, A/B experimentation, and engagement frameworks.",
     brandColor: "#9C82D3",
   },
   {
@@ -52,7 +53,7 @@ const milestones: TimelineItem[] = [
     role: "Psychology & Economics",
     period: "2001 — 2005",
     milestone: "Applied Game Theory",
-    kpiLabel: "Double major with focuse on incentives, decision theory, and consumer behavior.",
+    kpiLabel: "Double major with focus on incentives, decision theory, gamification, and consumer behavior.",
     brandColor: "#4F80CE",
   },
 ];
