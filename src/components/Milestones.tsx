@@ -1,7 +1,13 @@
+import { useState } from "react";
 import logoBird from "@/assets/logo-bird.png";
 import logoStubhub from "@/assets/logo-stubhub.png";
 import logoKlutch from "@/assets/logo-klutch.png";
 import logoYale from "@/assets/logo-yale.png";
+import { useIsMobile } from "@/hooks/use-mobile";
+import {
+  Dialog,
+  DialogContent,
+} from "@/components/ui/dialog";
 
 interface TimelineItem {
   logo: string;
@@ -54,6 +60,9 @@ const milestones: TimelineItem[] = [
 ];
 
 const Milestones = () => {
+  const isMobile = useIsMobile();
+  const [selected, setSelected] = useState<TimelineItem | null>(null);
+
   return (
     <section className="mt-12 mb-2">
       <h2
@@ -73,16 +82,14 @@ const Milestones = () => {
             >
               {/* Timeline spine */}
               <div className="flex flex-col items-center shrink-0 w-10">
-                {/* Dot */}
                 <div className="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_hsl(45_100%_60%_/_0.4)] mt-1 shrink-0" />
-                {/* Line */}
                 {!isLast && <div className="w-px flex-1 bg-gradient-to-b from-primary/40 to-border/30" />}
               </div>
 
               {/* Card */}
               <div className={`group flex-1 pb-8 ${isLast ? "pb-0" : ""}`}>
                 <div
-                  className="glass-card p-4 md:p-6 transition-all duration-300 hover:border-primary/30 overflow-hidden"
+                  className={`glass-card p-4 md:p-6 transition-all duration-300 hover:border-primary/30 overflow-hidden ${isMobile ? "cursor-pointer active:scale-[0.98]" : ""}`}
                   style={{
                     boxShadow: `0 0 25px ${m.brandColor}33`,
                   }}
@@ -92,16 +99,16 @@ const Milestones = () => {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.boxShadow = `0 0 25px ${m.brandColor}33`;
                   }}
+                  onClick={() => {
+                    if (isMobile) setSelected(m);
+                  }}
                 >
                    <div className="flex items-start gap-3 md:gap-4">
-                    {/* Logo */}
                     <img
                       src={m.logo}
                       alt={`${m.company} logo`}
                       className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-[22%] shrink-0 shadow-[0_2px_8px_hsl(0_0%_0%_/_0.3)]"
                     />
-
-                    {/* Info */}
                     <div className="flex-1 min-w-0 overflow-hidden">
                       <div className="flex flex-col gap-1 mb-1">
                         <div className="flex items-start justify-between gap-2">
@@ -128,8 +135,6 @@ const Milestones = () => {
                         </p>
                         <span className="text-muted-foreground text-xs font-body">{m.period}</span>
                       </div>
-
-                      {/* KPI Label */}
                       <p className="text-muted-foreground text-sm leading-snug mt-3">{m.kpiLabel}</p>
                     </div>
                   </div>
@@ -139,6 +144,59 @@ const Milestones = () => {
           );
         })}
       </div>
+
+      {/* Mobile detail dialog */}
+      <Dialog open={!!selected} onOpenChange={(open) => !open && setSelected(null)}>
+        <DialogContent
+          className="glass-card border-border/50 max-w-[92vw] rounded-2xl p-0 overflow-hidden"
+          style={{
+            boxShadow: selected ? `0 0 40px ${selected.brandColor}40` : undefined,
+          }}
+        >
+          {selected && (
+            <div className="p-6 pt-8">
+              {/* Logo + Company */}
+              <div className="flex items-center gap-4 mb-5">
+                <img
+                  src={selected.logo}
+                  alt={`${selected.company} logo`}
+                  className="h-14 w-14 object-cover rounded-[22%] shadow-[0_2px_8px_hsl(0_0%_0%_/_0.3)]"
+                />
+                <div>
+                  <h3 className="font-heading text-xl font-semibold text-foreground">
+                    {selected.company}
+                  </h3>
+                  <span className="text-muted-foreground text-sm font-body">{selected.period}</span>
+                </div>
+              </div>
+
+              {/* Role badge */}
+              <span
+                className="inline-block font-heading text-xs font-medium tracking-wider uppercase rounded-full px-3 py-1 mb-4"
+                style={{
+                  color: selected.brandColor,
+                  borderColor: `${selected.brandColor}4D`,
+                  backgroundColor: `${selected.brandColor}1A`,
+                  borderWidth: '1px',
+                  borderStyle: 'solid',
+                }}
+              >
+                {selected.role}
+              </span>
+
+              {/* Milestone */}
+              <p className="text-primary font-heading text-lg font-medium tracking-wider uppercase mb-4">
+                {selected.milestone}
+              </p>
+
+              {/* Description */}
+              <p className="text-muted-foreground text-base leading-relaxed">
+                {selected.kpiLabel}
+              </p>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
