@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Linkedin } from "lucide-react";
 import logoBird from "@/assets/logo-bird.png";
 import logoStubhub from "@/assets/logo-stubhub.png";
 import logoKlutch from "@/assets/logo-klutch.png";
@@ -188,9 +189,20 @@ const Milestones = () => {
               </p>
 
               {/* Description */}
-              <p className="text-muted-foreground text-base leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed mb-5">
                 {selected.kpiLabel}
               </p>
+
+              {/* LinkedIn link */}
+              <a
+                href="https://www.linkedin.com/in/huntergray"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+              >
+                <Linkedin size={16} />
+                Full details on LinkedIn
+              </a>
             </div>
           )}
         </DialogContent>
