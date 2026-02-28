@@ -76,8 +76,8 @@ const Milestones = () => {
 
               {/* Card */}
               <div className={`group flex-1 pb-8 ${isLast ? "pb-0" : ""}`}>
-                <div className="glass-card p-5 md:p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_hsl(45_100%_60%_/_0.08)]">
-                  <div className="flex items-start gap-4">
+                <div className="glass-card p-4 md:p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_hsl(45_100%_60%_/_0.08)] overflow-hidden">
+                   <div className="flex items-start gap-3 md:gap-4">
                     {/* Logo */}
                     <img
                       src={m.logo}
@@ -87,26 +87,26 @@ const Milestones = () => {
 
                     {/* Info */}
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-start justify-between gap-3 mb-1">
-                        <div>
+                      <div className="flex flex-col gap-1 mb-1">
+                        <div className="flex items-start justify-between gap-2">
                           <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
                             {m.company}
                           </h3>
-                          <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase mt-0.5">
-                            {m.role}
-                          </p>
-                          <span className="text-muted-foreground text-xs font-body">{m.period}</span>
+                          <div className="flex flex-wrap gap-1.5 justify-end shrink-0">
+                            {m.badges.map((badge) => (
+                              <span
+                                key={badge}
+                                className="text-primary font-heading text-[10px] md:text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2 md:px-2.5 py-0.5 whitespace-nowrap"
+                              >
+                                {badge}
+                              </span>
+                            ))}
+                          </div>
                         </div>
-                        <div className="flex flex-wrap gap-1.5 justify-end">
-                          {m.badges.map((badge) => (
-                            <span
-                              key={badge}
-                              className="text-primary font-heading text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2.5 py-0.5 whitespace-nowrap"
-                            >
-                              {badge}
-                            </span>
-                          ))}
-                        </div>
+                        <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase">
+                          {m.role}
+                        </p>
+                        <span className="text-muted-foreground text-xs font-body">{m.period}</span>
                       </div>
 
                       {/* KPI Label */}
