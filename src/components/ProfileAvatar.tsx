@@ -3,26 +3,27 @@ import profileImage from "@/assets/profile.png";
 const ProfileAvatar = () => {
   return (
     <div className="relative shrink-0">
-      {/* Glow */}
+      {/* Warm gold glow matching site */}
       <div
-        className="absolute -inset-4 rounded-full"
+        className="absolute -inset-5 rounded-full"
         style={{
           background: `
             radial-gradient(
               circle,
-              hsl(45 100% 60% / 0.8) 0%,
-              hsl(45 100% 60% / 0.5) 30%,
-              hsl(200 80% 60% / 0.35) 50%,
+              hsl(46 100% 60% / 0.95) 0%,
+              hsl(46 100% 58% / 0.75) 22%,
+              hsl(46 100% 55% / 0.45) 40%,
+              hsl(46 100% 50% / 0.20) 55%,
               transparent 70%
             )
           `,
-          filter: "blur(12px)",
-          opacity: 0.95,
+          filter: "blur(14px)",
+          opacity: 1,
           pointerEvents: "none",
         }}
       />
 
-      {/* Avatar (no border outline) */}
+      {/* Avatar */}
       <div
         className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden"
         style={{
@@ -33,7 +34,7 @@ const ProfileAvatar = () => {
         <img
           src={profileImage}
           alt="Hunter Gray"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover"
           style={{
             WebkitBackfaceVisibility: "hidden",
             transform: "translateZ(0)",
