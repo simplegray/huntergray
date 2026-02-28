@@ -18,7 +18,7 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    badges: ["IPO → EBITDA+"],
+    badges: ["IPO → Profitability"],
     kpiLabel:
       "Led technology through IPO and first profitable year at global scale. Spearheaded the company's flagship machine-learning model.",
   },
