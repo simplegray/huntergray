@@ -40,7 +40,7 @@ const Index = () => {
           </div>
 
           {/* Timeline Highlights */}
-          <Milestones />
+          <Key Milestones />
 
           <div className="space-y-5 text-foreground/90 font-body leading-relaxed">
             <p
