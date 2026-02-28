@@ -3,7 +3,7 @@ import profileImage from "@/assets/profile.png";
 const ProfileAvatar = () => {
   return (
     <div className="relative shrink-0">
-      <div className="absolute -inset-1 rounded-full opacity-50" style={{ background: 'radial-gradient(circle, hsl(45 100% 60% / 0.4), hsl(200 80% 60% / 0.2), transparent)', filter: 'blur(12px)' }} />
+      <div className="absolute -inset-3 rounded-full opacity-70" style={{ background: 'radial-gradient(circle, hsl(45 100% 60% / 0.5), hsl(200 80% 60% / 0.3), transparent)', filter: 'blur(16px)' }} />
       <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-primary/30" style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)', willChange: 'transform' }}>
         <img
           src={profileImage}
