@@ -99,9 +99,7 @@ const Milestones = () => {
                   onMouseLeave={(e) => {
                     e.currentTarget.style.boxShadow = `0 0 25px ${m.brandColor}33`;
                   }}
-                  onClick={() => {
-                    if (isMobile) setSelected(m);
-                  }}
+                  onClick={() => setSelected(m)}
                 >
                    <div className="flex items-start gap-3 md:gap-4">
                     <img
