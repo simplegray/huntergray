@@ -36,7 +36,7 @@ const milestones: TimelineItem[] = [
     company: "Klutch",
     role: "CEO & Founder",
     period: "2011 — 2015",
-    badges: ["Exit", "Startup"],
+    badges: ["Founded → Acquired by eBay"],
     kpiLabel:
       'Founded startup to solve the consumer problem of group scheduling. Set vision, product strategy, led funding and exit. Klutch was voted as a "Best New App" by Apple in the App Store. Klutch was acquired by eBay in 2015.',
   },
