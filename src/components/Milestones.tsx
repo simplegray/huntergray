@@ -10,6 +10,7 @@ interface TimelineItem {
   period: string;
   badges: string[];
   kpiLabel: string;
+  brandColor: string;
 }
 
 const milestones: TimelineItem[] = [
@@ -21,6 +22,7 @@ const milestones: TimelineItem[] = [
     badges: ["IPO → Profitability"],
     kpiLabel:
       "Led technology through IPO and first profitable year at global scale. Spearheaded the company's flagship machine-learning model.",
+    brandColor: "#62C9EA",
   },
   {
     logo: logoStubhub,
@@ -29,6 +31,7 @@ const milestones: TimelineItem[] = [
     period: "2015 — 2017",
     badges: ["Growth & Innovation"],
     kpiLabel: "Led innovation division developing robust A/B experimentation and engagement frameworks.",
+    brandColor: "#582CB2",
   },
   {
     logo: logoKlutch,
@@ -37,6 +40,7 @@ const milestones: TimelineItem[] = [
     period: "2011 — 2015",
     badges: ["Founded → Acquired by eBay"],
     kpiLabel: "Raised capital, built product, and led company through acquisition.",
+    brandColor: "#E48253",
   },
   {
     logo: logoYale,
@@ -45,6 +49,7 @@ const milestones: TimelineItem[] = [
     period: "2001 — 2005",
     badges: ["Applied Game Theory"],
     kpiLabel: "Double major with focuse on incentives, decision theory, and consumer behavior.",
+    brandColor: "#113165",
   },
 ];
 
@@ -76,7 +81,18 @@ const Milestones = () => {
 
               {/* Card */}
               <div className={`group flex-1 pb-8 ${isLast ? "pb-0" : ""}`}>
-                <div className="glass-card p-4 md:p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_hsl(45_100%_60%_/_0.08)] overflow-hidden">
+                <div
+                  className="glass-card p-4 md:p-6 transition-all duration-300 hover:border-primary/30 overflow-hidden"
+                  style={{
+                    boxShadow: `0 0 25px ${m.brandColor}33`,
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.boxShadow = `0 0 30px hsl(45 100% 60% / 0.12)`;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.boxShadow = `0 0 25px ${m.brandColor}33`;
+                  }}
+                >
                    <div className="flex items-start gap-3 md:gap-4">
                     {/* Logo */}
                     <img
@@ -94,7 +110,14 @@ const Milestones = () => {
                           </h3>
                           <div className="flex flex-wrap gap-1.5 justify-end shrink-0">
                             <span
-                              className="text-primary font-heading text-[8px] md:text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-1.5 md:px-2.5 py-0.5"
+                              className="font-heading text-[8px] md:text-xs font-medium tracking-wider uppercase rounded-full px-1.5 md:px-2.5 py-0.5"
+                              style={{
+                                color: m.brandColor,
+                                borderColor: `${m.brandColor}4D`,
+                                backgroundColor: `${m.brandColor}1A`,
+                                borderWidth: '1px',
+                                borderStyle: 'solid',
+                              }}
                             >
                               {m.role}
                             </span>
