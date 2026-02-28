@@ -34,8 +34,7 @@ const milestones: TimelineItem[] = [
     role: "Director of Product",
     period: "2015 — 2017",
     milestone: "Growth & Innovation",
-    kpiLabel:
-      "Led innovation division developing robust rapid iteration, A/B experimentation, and engagement frameworks.",
+    kpiLabel: "Led innovation division developing rapid iteration, A/B experimentation, and engagement frameworks.",
     brandColor: "#9C82D3",
   },
   {
