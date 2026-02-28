@@ -194,15 +194,16 @@ const Milestones = () => {
               </p>
 
               {/* LinkedIn link */}
-              <div className="flex justify-end">
+              <div className="flex items-center justify-end gap-2">
+                <span className="text-sm text-muted-foreground">Full details on LinkedIn</span>
                 <a
                   href="https://linkedin.com/in/huntergray"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="LinkedIn"
+                  className="social-link"
                 >
-                  Full details on LinkedIn
-                  <Linkedin size={16} />
+                  <Linkedin className="w-5 h-5" />
                 </a>
               </div>
             </div>
