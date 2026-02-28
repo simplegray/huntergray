@@ -18,7 +18,7 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    badges: ["IPO", "EBITDA+"],
+    badges: ["IPO → EBITDA+"],
     kpiLabel:
       "Led technology strategy for scaling our global operations across 300+ and developing the company's signature machine-learning model for scooter placement and demand pricing optimization.",
   },
@@ -27,7 +27,7 @@ const milestones: TimelineItem[] = [
     company: "StubHub",
     role: "Director of Product",
     period: "2015 — 2017",
-    badges: ["New Ventures"],
+    badges: ["K-Factor"],
     kpiLabel:
       "Spearheaded eBay's innovation division at StubHub. Focused on mobile, payment technology, event discovery, and social engagement to increase our virality (k-factor) KPI.",
   },
@@ -36,7 +36,7 @@ const milestones: TimelineItem[] = [
     company: "Klutch",
     role: "CEO & Founder",
     period: "2011 — 2015",
-    badges: ["Exit", "Startup"],
+    badges: ["Founded → Acquired by eBay"],
     kpiLabel:
       'Founded startup to solve the consumer problem of group scheduling. Set vision, product strategy, led funding and exit. Klutch was voted as a "Best New App" by Apple in the App Store. Klutch was acquired by eBay in 2015.',
   },
@@ -45,7 +45,7 @@ const milestones: TimelineItem[] = [
     company: "Yale University",
     role: "Psychology & Economics",
     period: "2001 — 2005",
-    badges: ["Game Theory"],
+    badges: ["Foundation in Behavioral Systems"],
     kpiLabel:
       "Studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
   },
