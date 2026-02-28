@@ -20,7 +20,7 @@ const milestones: TimelineItem[] = [
     period: "2018 — Present",
     badges: ["IPO → EBITDA+"],
     kpiLabel:
-      "Led technology through IPO and first profitable year at global scale. Spearheaded the company's flagship machine-learning model for scooter placement and demand pricing optimization.",
+      "Led technology through IPO and first profitable year at global scale. Spearheaded the company's flagship machine-learning model.",
   },
   {
     logo: logoStubhub,
@@ -28,7 +28,7 @@ const milestones: TimelineItem[] = [
     role: "Director of Product",
     period: "2015 — 2017",
     badges: ["K-Factor"],
-    kpiLabel: "Spearheaded the innovation division bringing A/B experimentation and engagement frameworks.",
+    kpiLabel: "Led innovation division developing robust A/B experimentation and engagement frameworks.",
   },
   {
     logo: logoKlutch,
@@ -43,7 +43,7 @@ const milestones: TimelineItem[] = [
     company: "Yale University",
     role: "Psychology & Economics",
     period: "2001 — 2005",
-    badges: ["Foundation in Behavioral Systems"],
+    badges: ["Applied Game Theory"],
     kpiLabel: "Double major with focuse on incentives, decision theory, and consumer behavior.",
   },
 ];
