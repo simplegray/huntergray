@@ -194,8 +194,7 @@ const Milestones = () => {
               </p>
 
               {/* LinkedIn link */}
-              <div className="flex items-center justify-end gap-2">
-                <span className="text-sm text-muted-foreground">Full details on LinkedIn</span>
+              <div className="flex justify-end">
                 <a
                   href="https://linkedin.com/in/huntergray"
                   target="_blank"
