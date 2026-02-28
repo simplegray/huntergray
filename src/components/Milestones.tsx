@@ -51,6 +51,12 @@ const milestones: TimelineItem[] = [
 const Milestones = () => {
   return (
     <section className="mt-12 mb-2">
+      <h2
+        className="font-heading text-lg md:text-xl font-semibold text-foreground mb-6 opacity-0 animate-slide-up"
+        style={{ animationDelay: "1.1s", animationFillMode: "forwards" }}
+      >
+        Milestones
+      </h2>
       <div className="relative">
         {milestones.map((m, i) => {
           const isLast = i === milestones.length - 1;
