@@ -75,15 +75,13 @@ const Milestones = () => {
               <div className={`group flex-1 pb-8 ${isLast ? "pb-0" : ""}`}>
                 <div className="glass-card p-5 md:p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_hsl(45_100%_60%_/_0.08)]">
                   {/* Row 1: Outcome headline — visually dominant */}
-                  <div className="flex items-center gap-2 mb-2">
-                    {m.badges.map((badge, idx) => (
-                      <span key={badge}>
-                        <span className="font-heading text-xl md:text-2xl font-bold text-foreground tracking-tight">
-                          {badge}
-                        </span>
-                        {idx < m.badges.length - 1 && (
-                          <span className="font-heading text-xl md:text-2xl font-bold text-muted-foreground/40 mx-1.5">→</span>
-                        )}
+                  <div className="flex flex-wrap items-center gap-1.5 mb-2">
+                    {m.badges.map((badge) => (
+                      <span
+                        key={badge}
+                        className="font-heading text-sm md:text-base font-bold tracking-wider uppercase border border-primary/30 bg-primary/10 text-primary rounded-full px-3 py-1 whitespace-nowrap"
+                      >
+                        {badge}
                       </span>
                     ))}
                   </div>
