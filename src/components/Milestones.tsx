@@ -49,7 +49,7 @@ const milestones: TimelineItem[] = [
     period: "2001 — 2005",
     badges: ["Applied Game Theory"],
     kpiLabel: "Double major with focuse on incentives, decision theory, and consumer behavior.",
-    brandColor: "#113165",
+    brandColor: "#2F589B",
   },
 ];
 
