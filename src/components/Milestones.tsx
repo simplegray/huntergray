@@ -80,8 +80,8 @@ const Milestones = () => {
               className="relative flex gap-5 opacity-0 animate-slide-up"
               style={{ animationDelay: `${1.3 + i * 0.15}s`, animationFillMode: "forwards" }}
             >
-              {/* Timeline spine */}
-              <div className="flex flex-col items-center shrink-0 w-10">
+              {/* Timeline spine - hidden on mobile */}
+              <div className="hidden md:flex flex-col items-center shrink-0 w-10">
                 <div className="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_hsl(45_100%_60%_/_0.4)] mt-1 shrink-0" />
                 {!isLast && <div className="w-px flex-1 bg-gradient-to-b from-primary/40 to-border/30" />}
               </div>
