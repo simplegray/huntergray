@@ -74,42 +74,37 @@ const Milestones = () => {
               {/* Card */}
               <div className={`group flex-1 pb-8 ${isLast ? "pb-0" : ""}`}>
                 <div className="glass-card p-5 md:p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_30px_hsl(45_100%_60%_/_0.08)]">
-                  <div className="flex items-start gap-4">
-                    {/* Logo */}
+                  {/* Row 1: Outcome headline — visually dominant */}
+                  <div className="flex items-center gap-2 mb-2">
+                    {m.badges.map((badge, idx) => (
+                      <span key={badge}>
+                        <span className="font-heading text-xl md:text-2xl font-bold text-foreground tracking-tight">
+                          {badge}
+                        </span>
+                        {idx < m.badges.length - 1 && (
+                          <span className="font-heading text-xl md:text-2xl font-bold text-muted-foreground/40 mx-1.5">→</span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Row 2: Company · Role — inline, medium weight */}
+                  <div className="flex items-center gap-2.5 mb-1">
                     <img
                       src={m.logo}
                       alt={`${m.company} logo`}
-                      className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-[22%] shrink-0 shadow-[0_2px_8px_hsl(0_0%_0%_/_0.3)]"
+                      className="h-5 w-5 object-cover rounded-[22%] shrink-0"
                     />
-
-                    {/* Info */}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-start justify-between gap-3 mb-1">
-                        <div>
-                          <h3 className="font-heading text-base md:text-lg font-semibold text-foreground">
-                            {m.company}
-                          </h3>
-                          <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase mt-0.5">
-                            {m.role}
-                          </p>
-                          <span className="text-muted-foreground text-xs font-body">{m.period}</span>
-                        </div>
-                        <div className="flex flex-wrap gap-1.5 justify-end">
-                          {m.badges.map((badge) => (
-                            <span
-                              key={badge}
-                              className="text-primary font-heading text-xs font-medium tracking-wider uppercase border border-primary/30 bg-primary/10 rounded-full px-2.5 py-0.5 whitespace-nowrap"
-                            >
-                              {badge}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/* KPI Label */}
-                      <p className="text-muted-foreground text-sm leading-snug mt-3">{m.kpiLabel}</p>
-                    </div>
+                    <p className="font-heading text-sm md:text-base font-medium text-foreground/80">
+                      {m.company} <span className="text-muted-foreground/50">·</span> {m.role}
+                    </p>
                   </div>
+
+                  {/* Row 3: Period — small, muted */}
+                  <p className="text-muted-foreground/60 text-xs font-body mb-3">{m.period}</p>
+
+                  {/* Row 4: One concise outcome sentence */}
+                  <p className="text-muted-foreground text-sm leading-snug">{m.kpiLabel}</p>
                 </div>
               </div>
             </div>
