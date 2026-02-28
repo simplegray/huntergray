@@ -161,12 +161,21 @@ const Milestones = () => {
                   alt={`${selected.company} logo`}
                   className="h-14 w-14 object-cover rounded-[22%] shadow-[0_2px_8px_hsl(0_0%_0%_/_0.3)]"
                 />
-                <div>
+                <div className="flex-1">
                   <h3 className="font-heading text-xl font-semibold text-foreground">
                     {selected.company}
                   </h3>
                   <span className="text-muted-foreground text-sm font-body">{selected.period}</span>
                 </div>
+                <a
+                  href="https://linkedin.com/in/huntergray"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  className="social-link shrink-0"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
               </div>
 
               {/* Role badge */}
@@ -189,22 +198,9 @@ const Milestones = () => {
               </p>
 
               {/* Description */}
-              <p className="text-muted-foreground text-base leading-relaxed mb-5">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 {selected.kpiLabel}
               </p>
-
-              {/* LinkedIn link */}
-              <div className="flex justify-end">
-                <a
-                  href="https://linkedin.com/in/huntergray"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  className="social-link"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-              </div>
             </div>
           )}
         </DialogContent>
