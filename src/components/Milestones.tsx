@@ -20,7 +20,7 @@ const milestones: TimelineItem[] = [
     period: "2018 — Present",
     badges: ["IPO → EBITDA+"],
     kpiLabel:
-      "Led technology strategy for scaling our global operations across 300+ and developing the company's signature machine-learning model for scooter placement and demand pricing optimization.",
+      "Led technology through IPO and first profitable year at global scale. Spearheaded the company's flagship machine-learning model for scooter placement and demand pricing optimization.",
   },
   {
     logo: logoStubhub,
@@ -28,8 +28,7 @@ const milestones: TimelineItem[] = [
     role: "Director of Product",
     period: "2015 — 2017",
     badges: ["K-Factor"],
-    kpiLabel:
-      "Spearheaded eBay's innovation division at StubHub. Focused on mobile, payment technology, event discovery, and social engagement to increase our virality (k-factor) KPI.",
+    kpiLabel: "Spearheaded the innovation division bringing A/B experimentation and engagement frameworks.",
   },
   {
     logo: logoKlutch,
@@ -37,8 +36,7 @@ const milestones: TimelineItem[] = [
     role: "CEO & Founder",
     period: "2011 — 2015",
     badges: ["Founded → Acquired by eBay"],
-    kpiLabel:
-      'Founded startup to solve the consumer problem of group scheduling. Set vision, product strategy, led funding and exit. Klutch was voted as a "Best New App" by Apple in the App Store. Klutch was acquired by eBay in 2015.',
+    kpiLabel: "Raised capital, built product, and led company through acquisition.",
   },
   {
     logo: logoYale,
@@ -46,8 +44,7 @@ const milestones: TimelineItem[] = [
     role: "Psychology & Economics",
     period: "2001 — 2005",
     badges: ["Foundation in Behavioral Systems"],
-    kpiLabel:
-      "Studied the intersection of social psychology and consumer behavior culminating in a synthetic focus in game theory.",
+    kpiLabel: "Double major with focuse on incentives, decision theory, and consumer behavior.",
   },
 ];
 
