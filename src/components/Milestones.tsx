@@ -8,7 +8,7 @@ interface TimelineItem {
   company: string;
   role: string;
   period: string;
-  badges: string[];
+  milestone: string;
   kpiLabel: string;
   brandColor: string;
 }
@@ -19,7 +19,7 @@ const milestones: TimelineItem[] = [
     company: "Bird",
     role: "Chief Technology Officer",
     period: "2018 — Present",
-    badges: ["IPO → Profitability"],
+    milestone: "IPO → Profitability",
     kpiLabel:
       "Led technology through IPO and first profitable year at global scale. Spearheaded the company's flagship machine-learning model.",
     brandColor: "#62C9EA",
@@ -29,7 +29,7 @@ const milestones: TimelineItem[] = [
     company: "StubHub",
     role: "Director of Product",
     period: "2015 — 2017",
-    badges: ["Growth & Innovation"],
+    milestone: "Growth & Innovation",
     kpiLabel: "Led innovation division developing robust A/B experimentation and engagement frameworks.",
     brandColor: "#9C82D3",
   },
@@ -38,7 +38,7 @@ const milestones: TimelineItem[] = [
     company: "Klutch",
     role: "CEO & Founder",
     period: "2011 — 2015",
-    badges: ["Founded → Acquired by eBay"],
+    milestone: "Founded → Acquired by eBay",
     kpiLabel: "Raised capital, built product, and led company through acquisition.",
     brandColor: "#E48253",
   },
@@ -47,7 +47,7 @@ const milestones: TimelineItem[] = [
     company: "Yale University",
     role: "Psychology & Economics",
     period: "2001 — 2005",
-    badges: ["Applied Game Theory"],
+    milestone: "Applied Game Theory",
     kpiLabel: "Double major with focuse on incentives, decision theory, and consumer behavior.",
     brandColor: "#4F80CE",
   },
@@ -124,7 +124,7 @@ const Milestones = () => {
                           </div>
                         </div>
                         <p className="text-primary font-heading text-xs font-medium tracking-wider uppercase">
-                          {m.badges[0]}
+                          {m.milestone}
                         </p>
                         <span className="text-muted-foreground text-xs font-body">{m.period}</span>
                       </div>
