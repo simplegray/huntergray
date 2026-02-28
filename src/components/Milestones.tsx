@@ -194,15 +194,17 @@ const Milestones = () => {
               </p>
 
               {/* LinkedIn link */}
-              <a
-                href="https://www.linkedin.com/in/huntergray"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
-              >
-                <Linkedin size={16} />
-                Full details on LinkedIn
-              </a>
+              <div className="flex justify-end">
+                <a
+                  href="https://linkedin.com/in/huntergray"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Full details on LinkedIn
+                  <Linkedin size={16} />
+                </a>
+              </div>
             </div>
           )}
         </DialogContent>
