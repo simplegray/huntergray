@@ -21,7 +21,7 @@ const Index = () => {
             <ProfileAvatar />
             <div>
               <h1 className="text-2xl md:text-3xl">
-                <TypewriterText text="I'm Hunter 👨‍💻" delay={600} />
+                <TypewriterText text="I'm Hunter 👋" delay={600} />
               </h1>
             </div>
           </div>
@@ -29,7 +29,8 @@ const Index = () => {
           {/* Bio */}
           <div className="space-y-5 text-foreground/90 font-body leading-relaxed">
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
-              <span className="text-primary font-medium">Software developer, founder, and CTO at Bird</span>, leading ML-driven consumer platform and product development at global scale.
+              <span className="text-primary font-medium">Software developer, founder, and CTO at Bird</span>, leading
+              ML-driven consumer platform and product development at global scale.
             </p>
 
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
@@ -54,7 +55,8 @@ const Index = () => {
               className="opacity-0 animate-slide-up text-muted-foreground"
               style={{ animationDelay: "1.9s", animationFillMode: "forwards" }}
             >
-              When I'm not working, you'll usually find me watching football ⚽, trying to teach my dog a new trick 🐕, or chasing down the perfect paella 😋
+              When I'm not working, you'll usually find me watching football ⚽, trying to teach my dog a new trick 🐕,
+              or chasing down the perfect paella 😋
             </p>
 
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "2.0s", animationFillMode: "forwards" }}>
@@ -63,7 +65,10 @@ const Index = () => {
           </div>
 
           {/* Social Links */}
-          <div className="mt-8 opacity-0 animate-slide-up" style={{ animationDelay: "2.1s", animationFillMode: "forwards" }}>
+          <div
+            className="mt-8 opacity-0 animate-slide-up"
+            style={{ animationDelay: "2.1s", animationFillMode: "forwards" }}
+          >
             <SocialLinks />
           </div>
         </div>
