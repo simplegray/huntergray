@@ -144,7 +144,7 @@ const Milestones = () => {
       {/* Mobile detail dialog */}
       <Dialog open={!!selected} onOpenChange={(open) => !open && setSelected(null)}>
         <DialogContent
-          className="max-w-[92vw] rounded-2xl p-0 overflow-hidden [&>button]:hidden bg-card/50 backdrop-blur-xl !border-none"
+          className="max-w-[92vw] md:max-w-[740px] rounded-2xl p-0 overflow-hidden [&>button]:hidden bg-card/50 backdrop-blur-xl !border-none"
           style={{
             border: "none",
             outline: "none",
