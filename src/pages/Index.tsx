@@ -61,6 +61,11 @@ const Index = () => {
               Feel free to say hi! 👋 <span className="text-muted-foreground">&lt;/hello&gt;</span>
             </p>
           </div>
+
+          {/* Social Links */}
+          <div className="mt-8 opacity-0 animate-slide-up" style={{ animationDelay: "2.1s", animationFillMode: "forwards" }}>
+            <SocialLinks />
+          </div>
         </div>
 
         {/* Subtle footer */}
