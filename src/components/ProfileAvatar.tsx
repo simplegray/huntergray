@@ -2,28 +2,18 @@ import profileImage from "@/assets/profile.png";
 
 const ProfileAvatar = () => {
   return (
-    <div className="relative shrink-0 w-20 h-20 md:w-24 md:h-24">
-      {/* Visible gold halo */}
+    <div className="relative shrink-0">
       <div
-        className="absolute inset-0 rounded-full pointer-events-none"
+        className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden"
         style={{
-          transform: "scale(1.25)",
-          background: `
-            radial-gradient(
-              circle,
-              transparent 60%,
-              hsl(46 100% 60% / 0.45) 68%,
-              hsl(46 100% 58% / 0.28) 76%,
-              hsl(46 100% 55% / 0.12) 84%,
-              transparent 92%
-            )
+          boxShadow: `
+            0 0 12px rgba(255, 200, 40, 0.35),
+            0 0 28px rgba(255, 200, 40, 0.18),
+            0 0 60px rgba(255, 200, 40, 0.08)
           `,
         }}
-      />
-
-      {/* Avatar */}
-      <div className="relative w-full h-full rounded-full overflow-hidden">
-        <img src={profileImage} alt="Hunter Gray" className="w-full h-full object-cover rounded-full" />
+      >
+        <img src={profileImage} alt="Hunter Gray" className="w-full h-full object-cover" />
       </div>
     </div>
   );
