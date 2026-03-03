@@ -31,8 +31,9 @@ const Index = () => {
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
               I've spent{" "}
               <span className="text-primary font-medium">17+ years building software and engineering teams</span> — from
-              early-stage startups to IPOs. My specialty is ML-driven product development: finding the elegant, scalable
-              solution hiding inside a complex problem. Simple to use, hard to replicate.
+              early-stage startups to IPOs. My specialty is{" "}
+              <span className="text-primary font-medium">ML-driven product development</span>: finding the elegant,
+              scalable solution hiding inside a complex problem. Simple to use, hard to replicate.
             </p>
 
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
