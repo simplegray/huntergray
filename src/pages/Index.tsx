@@ -29,17 +29,15 @@ const Index = () => {
           {/* Bio */}
           <div className="space-y-5 text-foreground/90 font-body leading-relaxed">
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
-              <span className="text-primary font-medium">
-                I've spent 17+ years building software and engineering teams — from early-stage startups to IPOs. My
-                specialty is ML-driven product development: finding the elegant, scalable solution hiding inside a
-                complex problem. Simple to use, hard to replicate. Today I'm CTO at Bird, leading product, data, and
-                engineering at global scale.
-              </span>
+              I've spent{" "}
+              <span className="text-primary font-medium">17+ years building software and engineering teams</span> — from
+              early-stage startups to IPOs. My specialty is ML-driven product development: finding the elegant, scalable
+              solution hiding inside a complex problem. Simple to use, hard to replicate.
             </p>
 
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
-              Over <span className="text-primary font-medium">15 years of experience</span> building high performing
-              engineering teams and turning complex business problems into simple, scalable solutions.
+              Currently, <span className="text-primary font-medium">I'm CTO at Bird</span>, leading product, data, and
+              engineering at global scale.
             </p>
           </div>
 
