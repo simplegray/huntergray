@@ -31,8 +31,8 @@ const Index = () => {
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
               Software developer, founder, and <span className="text-primary font-medium">technology executive</span>,
               leading ML-driven consumer platform and product development at global scale.{" "}
-              <span className="text-primary font-medium"> Currently, I'm CTO at Bird</span>
-              leading engineering, product, and data.
+              <span className="text-primary font-medium"> Currently, I'm CTO at Bird </span>
+              leading product, data, and engineering.
             </p>
 
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
