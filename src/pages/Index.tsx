@@ -29,7 +29,7 @@ const Index = () => {
           {/* Bio */}
           <div className="space-y-5 text-foreground/90 font-body leading-relaxed">
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
-              Software developer, founder, and <span className="text-primary font-medium">technology exec</span>,
+              Software developer, founder, and <span className="text-primary font-medium">technology executive</span>,
               leading ML-driven consumer platform and product development at global scale.{" "}
               <span>Currently, I'm CTO at Bird</span>
               leading engineering, product, and data.
