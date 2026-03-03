@@ -37,8 +37,8 @@ const Index = () => {
             </p>
 
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
-              Currently, <span className="text-primary font-medium">I'm CTO at Bird</span>, leading product, data, and
-              engineering at global scale.
+              Currently, <span className="text-primary font-medium">I'm CTO at Bird</span> where I lead product, data,
+              and engineering at global scale.
             </p>
           </div>
 
