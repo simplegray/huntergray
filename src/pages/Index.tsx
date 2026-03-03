@@ -29,8 +29,8 @@ const Index = () => {
           {/* Bio */}
           <div className="space-y-5 text-foreground/90 font-body leading-relaxed">
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.5s", animationFillMode: "forwards" }}>
-              <span className="text-primary font-medium">Software developer, founder, and CTO at Bird</span>, leading
-              ML-driven consumer platform and product development at global scale.
+              <span className="text-primary font-medium">Software developer, founder, and (currently) CTO at Bird</span>
+              , leading ML-driven consumer platform and product development at global scale.
             </p>
 
             <p className="opacity-0 animate-slide-up" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
