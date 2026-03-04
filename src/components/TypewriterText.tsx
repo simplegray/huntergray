@@ -42,10 +42,8 @@ const TypewriterText = ({ text, delay = 0 }: TypewriterTextProps) => {
   return (
     <span className="font-heading">
       <span className="text-muted-foreground">&lt;hello&gt;</span>{" "}
-      <span className="inline-block">
-        <span className="text-gradient font-semibold">{displayText}</span>
-        <span className={`text-primary ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity`}>|</span>
-      </span>
+      <span className="text-gradient font-semibold">{displayText}</span>
+      <span className={`text-primary ${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity`}>|</span>
     </span>
   );
 };

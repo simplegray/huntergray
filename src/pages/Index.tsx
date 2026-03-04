@@ -21,7 +21,7 @@ const Index = () => {
             <ProfileAvatar />
             <div>
               <h1 className="text-2xl md:text-3xl">
-                <TypewriterText text="I'm Hunter 👋" delay={600} />
+                <TypewriterText text={"I'm Hunter\u00A0Gray 👋"} delay={600} />
               </h1>
             </div>
           </div>
